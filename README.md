@@ -13,7 +13,7 @@ Updates on master-
 
 ----property file configuration starts here 
 
-`xml
+```xml
 
 spring.profiles.active=dev
 #Feign client
@@ -64,7 +64,7 @@ discovery.service.path=/alfresco/api
 feign.httpclient.enabled=true
 
 
-`
+```
 
 
 
