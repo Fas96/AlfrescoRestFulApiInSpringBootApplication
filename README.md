@@ -13,7 +13,7 @@ Updates on master-
 
 ----property file configuration starts here 
 
-```xml
+```java
 
 spring.profiles.active=dev
 #Feign client
