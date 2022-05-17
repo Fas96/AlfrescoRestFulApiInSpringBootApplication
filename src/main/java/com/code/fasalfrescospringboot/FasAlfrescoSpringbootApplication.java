@@ -28,12 +28,12 @@ public class FasAlfrescoSpringbootApplication extends SpringBootServletInitializ
     @Autowired
     ListGroupMembersCmd copyNodeCmd;
     @Autowired
-    ListAuditAppsCmd   listAuditAppsCmd;
+    ListNodeAuditLogsCmd   listAuditAppsCmd;
 
 //    execute(String username, String pwd, String firstname, String lastname, String email)
     @Override
     public void run(String... args) throws Exception {
-        listAuditAppsCmd.execute();
+        listAuditAppsCmd.execute("eea473d5-d3d2-473b-bd7f-49ec03179648");
 
     }
 }

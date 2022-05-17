@@ -25,6 +25,7 @@ public class ListAuditAppsCmd {
 
         LOGGER.info("Listing active audit applications in the repository:");
         AuditAppPaging auditApps = auditApi.listAuditApps(skipCount, maxItems, fields).getBody();
+        assert auditApps != null;
         for (AuditAppEntry auditAppEntry: auditApps.getList().getEntries()) {
             LOGGER.info("  {}", auditAppEntry);
         }
